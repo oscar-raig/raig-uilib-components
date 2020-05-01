@@ -1,0 +1,51 @@
+{
+  "name": "@raig/raig-uilib-components",
+  "version": "1.0.0",
+  "description": "\"Components for raig\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "sui-studio build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sui-studio start",
+    "lint:js": "sui-lint js",
+    "dev": "sui-studio dev",
+    "generate": "sui-studio generate --prefix raig --scope raig",
+    "co": "sui-studio commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscar-raig/raig-uilib-components.git"
+  },
+  "keywords": [
+    "components",
+    "react",
+    "raig"
+  ],
+  "author": "Oscar Raig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscar-raig/raig-uilib-components/issues"
+  },
+  "homepage": "https://github.com/oscar-raig/raig-uilib-components#readme",
+  "devDependencies": {
+    "@s-ui/studio": "^7.33.0"
+  },
+  "config": {
+    "sui-mono": {
+      "access": "public",
+      "packagesFolder": "./components",
+      "deepLevel": 2
+    },
+    "validate-commit-msg": {
+      "types": "@s-ui/mono/src/types"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "stylelint": {
+    "extends": "./node_modules/@s-ui/lint/stylelint.config.js"
+  }
+}
